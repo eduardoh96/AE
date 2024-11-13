@@ -43,3 +43,16 @@ media_consumo = total_consumo / n
 
 # Contagem de dias que não cumpriram a meta
 dias_nao_cumpriram_meta = n - dias_cumpriram_meta
+
+# Relatório de Resultados
+print("\n--- Relatório de Consumo de Energia ---")
+if dias_cumpriram_meta == n:
+    print("Parabéns! Todos os dias cumpriram a meta de consumo sustentável.")
+elif dias_cumpriram_meta == 0:
+    print("Infelizmente, nenhum dia cumpriu a meta de consumo sustentável.")
+else:
+    print(f"{dias_cumpriram_meta} dias cumpriram a meta e {dias_nao_cumpriram_meta} dias não cumpriram a meta.")
+print(
+    f"A média de consumo foi de {media_consumo:.2f} kWh. O maior consumo foi de {maior_consumo} kWh e o menor consumo foi de {menor_consumo} kWh.")
+
+print('Obrigado pelas informações e por participar!')
